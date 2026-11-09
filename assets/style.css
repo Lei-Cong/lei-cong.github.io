@@ -59,6 +59,7 @@ p { margin: 0 0 12px; }
 .authors, .venue { margin: 0; font-size: 14px; color: var(--muted); }
 .authors strong { color: var(--ink); }
 .venue { font-style: italic; }
+.publication-news { margin: 8px 0 0; font-size: 14px; }
 .filters { margin-bottom: 15px; font-family: var(--sans); }
 .filters > div { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 10px; }
 button, input { font: 13px var(--sans); border: 1px solid #928d85; border-radius: 3px; color: var(--navy); background: var(--surface); }
