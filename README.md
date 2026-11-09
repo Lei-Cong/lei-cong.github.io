@@ -40,3 +40,27 @@ GitHub 官方说明：https://docs.github.com/en/pages/quickstart
 内容直接修改 `index.html`。论文增删时同步维护 `assets/publications.json`；筛选计数自动跟随 HTML 条目。新增论文的 `data-topic` 使用现有主题（多个主题以竖线分隔），`data-search` 使用小写的标题、作者、期刊和年份。发表状态变化时同时更新期刊信息与标签。更新 CV 时，用新 PDF 替换 assets/Lei-Cong-CV-2026.pdf。
 
 本项目没有依赖构建步骤；不需要 npm、Jekyll、密钥或服务器。未附带 GitHub 自动推送功能。
+
+## 搜索收录与个人身份信息
+
+首页的搜索标题、摘要、分享摘要以及 JSON-LD 共同描述 Lei Cong 的身份、ORCID、现任机构、研究方向、两篇代表作、社区平台和归档数据集。修改个人资料或代表作后，须同步检查 index.html 的 JSON-LD 与可见正文。网页有实质内容更新时再更新 sitemap.xml 的 lastmod。
+
+robots.txt 现有的通用允许规则覆盖搜索机器人。新增文字直接存在于 HTML，便于抓取。上述设置有助于访问和理解内容，实际收录及 AI 引用仍由各服务决定。
+
+发布后可完成以下账号操作。
+
+1. 在 Google Search Console 添加 URL-prefix 属性 https://lei-cong.github.io/，选择 HTML 文件或 HTML meta 标签验证方式。将平台提供的真实验证文件放到本仓库根目录，或把标签加到 index.html 的 head，发布后点击验证。URL-prefix 属性适用于本 GitHub Pages 地址。
+2. 在 Search Console 提交 https://lei-cong.github.io/sitemap.xml，并用网址检查工具检查首页，按需请求编入索引。
+3. 在 Bing Webmaster Tools 导入已验证的 Google 属性，或使用 Bing 提供的 XML 文件或 meta 标签验证，再提交相同站点地图。
+4. 在 ORCID、GitHub 个人资料及现有 Google Scholar 档案中添加个人主页，并确认公开可见。机构个人页的主页链接可由有编辑权限的人补充。
+5. 观察搜索曝光、查询词和点击，以及 Bing 支持的 AI 引用报告。提交站点地图后无需反复提交相同内容。
+
+目前仓库没有 Google 或 Bing 的账号验证文件，收录提交尚未完成。
+
+官方资料
+- https://support.google.com/webmasters/answer/34592
+- https://support.google.com/webmasters/answer/9008080
+- https://www.bing.com/webmasters/help/add-and-verify-site-12184f8b
+- https://developers.google.com/search/docs/appearance/structured-data/profile-page
+- https://developers.google.com/search/docs/appearance/structured-data/dataset
+- https://developers.openai.com/api/docs/bots

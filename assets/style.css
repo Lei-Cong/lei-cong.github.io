@@ -60,6 +60,16 @@ p { margin: 0 0 12px; }
 .authors strong { color: var(--ink); }
 .venue { font-style: italic; }
 .publication-news { margin: 8px 0 0; font-size: 14px; }
+.publication-summary { margin: 8px 0 0; font-size: 14px; }
+.publication-platform {
+  margin-top: 12px;
+  padding: 12px 16px;
+  border-left: 2px solid var(--accent);
+  background: var(--surface);
+}
+.publication-platform .eyebrow { margin: 0 0 5px; }
+.publication-platform h4 { margin: 0 0 6px; font-size: 18px; }
+.publication-platform p:last-child { margin: 0; font-size: 14px; }
 .filters { margin-bottom: 15px; font-family: var(--sans); }
 .filters > div { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 10px; }
 button, input { font: 13px var(--sans); border: 1px solid #928d85; border-radius: 3px; color: var(--navy); background: var(--surface); }
@@ -78,8 +88,6 @@ input { width: min(100%, 380px); padding: 8px 10px; }
 .timeline span, .tag { font: 12px var(--sans); color: var(--muted); }
 .timeline p, .detail-list p, .two-columns > div > p { margin: 0 0 4px; font-size: 15px; }
 .subheading { margin-top: 20px; }
-.resource { display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid var(--rule); margin-top: 20px; padding-top: 15px; text-decoration: none; }
-.resource p { margin: 0; color: var(--muted); }
 .item-lines { margin: 6px 0 0; padding-left: 1.2em; list-style: disc; font-size: 15px; }
 .detail-list .item-lines li { padding: 0; margin: 4px 0; border: 0; }
 footer { padding: 18px 0 25px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font: 12px var(--sans); color: var(--muted); }
