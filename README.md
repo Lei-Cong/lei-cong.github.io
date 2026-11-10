@@ -1,6 +1,6 @@
 # Lei Cong — Academic Website
 
-A standalone, responsive, English academic website for **https://lei-cong.github.io/**. Plain HTML, CSS and JavaScript; no installation, build, external fonts, analytics, or account required. All publications remain readable without JavaScript.
+A standalone, responsive, English academic website for **https://lei-cong.github.io/**. Plain HTML, CSS and JavaScript; no installation, build, external fonts, analytics, or account required. The full publication list initially shows five entries, with a button to expand or collapse the rest. Search and topic filters show all matching entries. All publications remain readable without JavaScript and in print.
 
 ## 本地预览
 
@@ -38,6 +38,8 @@ GitHub 官方说明：https://docs.github.com/en/pages/quickstart
 ## 日常维护
 
 内容直接修改 `index.html`。论文增删时同步维护 `assets/publications.json`；筛选计数自动跟随 HTML 条目。新增论文的 `data-topic` 使用现有主题（多个主题以竖线分隔），`data-search` 使用小写的标题、作者、期刊和年份。发表状态变化时同时更新期刊信息与标签。更新 CV 时，用新 PDF 替换 assets/Lei-Cong-CV-2026.pdf。
+
+修改 `assets/style.css` 或 `assets/main.js` 后，也要更新 `index.html` 中对应资源链接的 `?v=` 版本号（可用文件内容的哈希值），让浏览器获取新版本。部署后若仍显示旧页面，可强制刷新或用无痕窗口检查。
 
 本项目没有依赖构建步骤；不需要 npm、Jekyll、密钥或服务器。未附带 GitHub 自动推送功能。
 
