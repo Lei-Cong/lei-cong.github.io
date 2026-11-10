@@ -28,6 +28,20 @@ nav { display: flex; flex-wrap: wrap; gap: 8px 20px; font: 13px/1.5 var(--sans);
 nav a { text-decoration: none; }
 nav a:hover { text-decoration: underline; }
 section { padding: 34px 0; border-bottom: 1px solid var(--rule); }
+.section-panel {
+  margin: 28px 0;
+  padding: 28px;
+  border: 1px solid rgba(52, 91, 131, .18);
+  border-radius: 12px;
+  background: rgba(255, 253, 248, .65);
+  box-shadow: 0 2px 12px rgba(20, 44, 73, .025);
+}
+.publications-panel > section { padding: 0; border: 0; }
+.publications-panel > section + section {
+  margin-top: 28px;
+  padding-top: 28px;
+  border-top: 1px solid var(--rule);
+}
 .hero { display: grid; grid-template-columns: minmax(0, 1fr) 265px; gap: 52px; padding: 42px 0 34px; }
 .hero aside { border-left: 1px solid var(--rule); padding: 4px 0 4px 24px; align-self: center; }
 .hero aside p { margin: 0 0 10px; }
@@ -49,8 +63,28 @@ p { margin: 0 0 12px; }
 .intro { max-width: 61ch; margin-bottom: 0; }
 .section-heading { margin-bottom: 15px; }
 .section-heading > p { color: var(--muted); font-size: 14px; }
-.research-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
+.research-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.research-grid > article {
+  min-width: 0;
+  padding: 24px 22px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--accent);
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(20, 44, 73, .06);
+}
+.research-grid h3 { margin-bottom: 12px; }
 .research-grid p { font-size: 15px; margin: 0; }
+@media screen and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .research-grid > article { transition: transform 180ms ease, box-shadow 180ms ease; }
+  .research-grid > article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 26px rgba(20, 44, 73, .12);
+  }
+}
+@media (max-width: 900px) {
+  .research-grid { grid-template-columns: minmax(0, 1fr); }
+}
 .selected-list { list-style: none; padding: 0; margin: 0 0 14px; }
 .selected-list li, .publication { border-top: 1px solid var(--rule); padding: 15px 0; }
 .selected-list li:last-child { border-bottom: 1px solid var(--rule); }
@@ -86,6 +120,7 @@ footer { padding: 18px 0 25px; display: flex; flex-wrap: wrap; justify-content: 
 .skip:focus { top: 8px; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 @media (max-width: 760px) {
+  .section-panel { padding: 24px; }
   header { align-items: flex-start; flex-direction: column; gap: 8px; }
   .hero { grid-template-columns: 1fr 205px; gap: 22px; }
   .hero aside { padding-left: 15px; }
@@ -98,11 +133,13 @@ footer { padding: 18px 0 25px; display: flex; flex-wrap: wrap; justify-content: 
   nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; width: 100%; }
   nav a { display: flex; align-items: center; min-height: 44px; }
   section { padding: 25px 0; }
+  .section-panel { margin: 22px 0; padding: 22px 16px; border-radius: 10px; }
+  .publications-panel > section + section { margin-top: 24px; padding-top: 24px; }
   .hero, .research-grid, .two-columns { grid-template-columns: 1fr; }
   .hero { padding: 30px 0 24px; gap: 20px; }
   .hero aside { border-left: 0; border-top: 1px solid var(--rule); padding: 12px 0 0; }
   h2 { font-size: 25px; }
-  .research-grid article + article { padding-top: 14px; border-top: 1px solid var(--rule); }
+  .research-grid > article { padding: 20px; }
   .filters > div { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .filters button, .filters input { min-height: 44px; }
   .filters input { width: 100%; font-size: 16px; }
@@ -112,5 +149,22 @@ footer { padding: 18px 0 25px; display: flex; flex-wrap: wrap; justify-content: 
   header nav, .filters, .skip, footer { display: none; }
   header, main { width: 100%; }
   section { padding: 14px 0; }
+  .section-panel {
+    margin: 0;
+    padding: 14px 0;
+    border: 0;
+    border-bottom: 1px solid var(--rule);
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+  .publications-panel > section + section { margin-top: 14px; padding-top: 14px; }
+  .research-grid > article {
+    background: transparent;
+    box-shadow: none;
+    transform: none;
+    transition: none;
+    break-inside: avoid;
+  }
   .publication, .selected-list li { break-inside: avoid; }
 }
