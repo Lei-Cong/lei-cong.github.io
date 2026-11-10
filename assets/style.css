@@ -6,6 +6,10 @@
   --navy: #142c49;
   --link: #244f7d;
   --accent: #345b83;
+  --blue: #3f74b8;
+  --teal: #238a84;
+  --gold: #c88b3d;
+  --violet: #8a77af;
   --rule: #d6dce3;
   --display: Baskerville, 'Baskerville Old Face', 'Palatino Linotype', Georgia, serif;
   --serif: Charter, 'Bitstream Charter', Cambria, Georgia, serif;
@@ -20,12 +24,27 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid 
 header, main, footer { width: min(100% - 64px, 1016px); margin-inline: auto; }
 header {
   display: flex; align-items: center; justify-content: space-between; gap: 20px;
-  border-top: 3px solid var(--accent); border-bottom: 1px solid var(--rule);
+  border-top: 3px solid var(--blue); border-bottom: 1px solid var(--rule);
   margin-top: 30px; padding: 16px 0;
 }
 .wordmark { font: 700 23px var(--display); color: var(--navy); text-decoration: none; }
 nav { display: flex; flex-wrap: wrap; gap: 8px 20px; font: 13px/1.5 var(--sans); }
 nav a { text-decoration: none; }
+nav a::before {
+  content: "";
+  display: inline-block;
+  flex: none;
+  width: 6px;
+  height: 6px;
+  margin-right: 8px;
+  border-radius: 50%;
+  vertical-align: .12em;
+  background: var(--nav-accent, var(--blue));
+}
+nav a[href="#research"] { --nav-accent: var(--blue); }
+nav a[href="#publications"] { --nav-accent: var(--teal); }
+nav a[href="#career"] { --nav-accent: var(--gold); }
+nav a[href="#community"] { --nav-accent: var(--violet); }
 nav a:hover { text-decoration: underline; }
 section { padding: 34px 0; border-bottom: 1px solid var(--rule); }
 .section-panel {
@@ -36,13 +55,38 @@ section { padding: 34px 0; border-bottom: 1px solid var(--rule); }
   background: rgba(255, 253, 248, .65);
   box-shadow: 0 2px 12px rgba(20, 44, 73, .025);
 }
+#research { --section-accent: var(--blue); }
+.publications-panel { --section-accent: var(--teal); }
+#career { --section-accent: var(--gold); }
+#community { --section-accent: var(--violet); }
+.section-panel h2 {
+  padding-left: 14px;
+  border-left: 3px solid var(--section-accent, var(--blue));
+}
 .publications-panel > section { padding: 0; border: 0; }
 .publications-panel > section + section {
   margin-top: 28px;
   padding-top: 28px;
   border-top: 1px solid var(--rule);
 }
-.hero { display: grid; grid-template-columns: minmax(0, 1fr) 265px; gap: 52px; padding: 42px 0 34px; }
+.hero { display: grid; grid-template-columns: minmax(0, 1fr) 250px; gap: 36px; padding: 42px 0 34px; }
+.hero-main, .identity-copy { min-width: 0; }
+.hero-identity { display: flex; align-items: center; gap: 22px; }
+.portrait {
+  display: block;
+  flex: 0 0 auto;
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid var(--surface);
+  border-radius: 50%;
+  outline: 1px solid rgba(35, 138, 132, .3);
+  outline-offset: 3px;
+  box-shadow: 0 6px 20px rgba(20, 44, 73, .1);
+}
+.hero-identity .position { margin-bottom: 0; }
+.hero-main > .intro { margin-top: 20px; }
 .hero aside { border-left: 1px solid var(--rule); padding: 4px 0 4px 24px; align-self: center; }
 .hero aside p { margin: 0 0 10px; }
 .hero aside, .profile-links { font-size: 14px; }
@@ -67,13 +111,31 @@ p { margin: 0 0 12px; }
 .research-grid > article {
   min-width: 0;
   padding: 24px 22px;
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-top: 3px solid var(--accent);
+  background: var(--card-tint, var(--surface));
+  border: 1px solid var(--card-border, var(--rule));
+  border-top: 3px solid var(--card-accent, var(--accent));
   border-radius: 10px;
   box-shadow: 0 4px 18px rgba(20, 44, 73, .06);
 }
-.research-grid h3 { margin-bottom: 12px; }
+.research-grid > article:nth-child(1) {
+  --card-tint: #eef4ff;
+  --card-border: #cddcf0;
+  --card-accent: var(--blue);
+  --card-heading: #254f82;
+}
+.research-grid > article:nth-child(2) {
+  --card-tint: #edf8f4;
+  --card-border: #c9e3db;
+  --card-accent: var(--teal);
+  --card-heading: #205d57;
+}
+.research-grid > article:nth-child(3) {
+  --card-tint: #fff5e6;
+  --card-border: #eddbc2;
+  --card-accent: var(--gold);
+  --card-heading: #795525;
+}
+.research-grid h3 { margin-bottom: 12px; color: var(--card-heading, var(--navy)); }
 .research-grid p { font-size: 15px; margin: 0; }
 @media screen and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
   .research-grid > article { transition: transform 180ms ease, box-shadow 180ms ease; }
@@ -83,6 +145,8 @@ p { margin: 0 0 12px; }
   }
 }
 @media (max-width: 900px) {
+  .hero { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  .hero aside { border-left: 0; border-top: 1px solid var(--rule); padding: 14px 0 0; }
   .research-grid { grid-template-columns: minmax(0, 1fr); }
 }
 .selected-list { list-style: none; padding: 0; margin: 0 0 14px; }
@@ -122,8 +186,6 @@ footer { padding: 18px 0 25px; display: flex; flex-wrap: wrap; justify-content: 
 @media (max-width: 760px) {
   .section-panel { padding: 24px; }
   header { align-items: flex-start; flex-direction: column; gap: 8px; }
-  .hero { grid-template-columns: 1fr 205px; gap: 22px; }
-  .hero aside { padding-left: 15px; }
   .research-grid { gap: 16px; }
   .two-columns { gap: 24px; }
 }
@@ -137,6 +199,11 @@ footer { padding: 18px 0 25px; display: flex; flex-wrap: wrap; justify-content: 
   .publications-panel > section + section { margin-top: 24px; padding-top: 24px; }
   .hero, .research-grid, .two-columns { grid-template-columns: 1fr; }
   .hero { padding: 30px 0 24px; gap: 20px; }
+  .hero-identity { gap: 14px; }
+  .portrait { width: 84px; height: 84px; }
+  .hero h1 { font-size: clamp(32px, 8vw, 42px); }
+  .hero-identity .position { font-size: 16px; }
+  .hero-main > .intro { margin-top: 18px; }
   .hero aside { border-left: 0; border-top: 1px solid var(--rule); padding: 12px 0 0; }
   h2 { font-size: 25px; }
   .research-grid > article { padding: 20px; }
@@ -149,6 +216,8 @@ footer { padding: 18px 0 25px; display: flex; flex-wrap: wrap; justify-content: 
   header nav, .filters, .skip, footer { display: none; }
   header, main { width: 100%; }
   section { padding: 14px 0; }
+  .portrait { box-shadow: none; outline: none; }
+  .section-panel h2 { border-left-color: var(--rule); }
   .section-panel {
     margin: 0;
     padding: 14px 0;
