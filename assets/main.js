@@ -33,7 +33,7 @@
     document.querySelector('#no-results').hidden = matching !== 0;
     disclosure.hidden = filtering || entries.length <= previewCount;
     toggle.setAttribute('aria-expanded', String(expanded || filtering));
-    toggleLabel.textContent = expanded ? 'Show fewer publications' : `Show all ${entries.length} publications`;
+    toggleLabel.textContent = expanded ? 'Show fewer publications' : 'Show all publications';
     toggleIcon.textContent = expanded ? '↑' : '↓';
   }
 

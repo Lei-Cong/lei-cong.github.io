@@ -37,7 +37,7 @@ GitHub 官方说明：https://docs.github.com/en/pages/quickstart
 
 ## 日常维护
 
-内容直接修改 `index.html`。论文增删时同步维护 `assets/publications.json`；筛选计数自动跟随 HTML 条目。新增论文的 `data-topic` 使用现有主题（多个主题以竖线分隔），`data-search` 使用小写的标题、作者、期刊和年份。发表状态变化时同时更新期刊信息与标签。更新 CV 时，用新 PDF 替换 assets/Lei-Cong-CV-2026.pdf。
+内容直接修改 `index.html`。完整论文列表按已发表论文的 `publication_date` 从新到旧排列；未发表稿件随后按预印本年月排列，数据库固定最后。修改顺序时同步调整 HTML 和 `assets/publications.json`；默认展示排序后的前五项。论文增删时同步维护 `assets/publications.json`；筛选计数自动跟随 HTML 条目。新增论文的 `data-topic` 使用现有主题（多个主题以竖线分隔），`data-search` 使用小写的标题、作者、期刊和年份。发表状态变化时同时更新期刊信息与标签。更新 CV 时，用新 PDF 替换 assets/Lei-Cong-CV-2026.pdf。
 
 修改 `assets/style.css` 或 `assets/main.js` 后，也要更新 `index.html` 中对应资源链接的 `?v=` 版本号（可用文件内容的哈希值），让浏览器获取新版本。部署后若仍显示旧页面，可强制刷新或用无痕窗口检查。
 

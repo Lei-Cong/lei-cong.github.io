@@ -1,30 +1,14 @@
 [
   {
-    "title": "Spin-dependent exotic interactions",
-    "authors": "L. Cong*, W. Ji*, P. Fadeev, F. Ficek, M. Jiang, V. V. Flambaum, H. S. Guan, D. F. Jackson Kimball, M. G. Kozlov, Y. V. Stadnik, D. Budker",
-    "venue": "Reviews of Modern Physics 97, 025005",
-    "year": 2025,
-    "topic": "Fundamental physics",
-    "url": "https://doi.org/10.1103/RevModPhys.97.025005",
-    "status": "Published"
-  },
-  {
-    "title": "Constraints on New Vector Boson Mediated Electron-Nucleus Interactions from Spectroscopy Data of Polar Diatomic Molecules",
-    "authors": "K. Gaul*, L. Cong*, D. Budker",
-    "venue": "Physical Review Letters 136, 181805",
+    "title": "Testing exotic electron-electron interactions with the helium ionization-energy anomaly",
+    "authors": "L. Cong, F. Ficek*, R. Abdullin, M. G. Kozlov*, D. Budker",
+    "venue": "Physical Review D 114, 095010",
     "year": 2026,
     "topic": "Fundamental physics",
-    "url": "https://doi.org/10.1103/d19m-s856",
-    "status": "Published"
-  },
-  {
-    "title": "Constraints on Axion-Mediated Dipole-Dipole Interactions",
-    "authors": "Z. T. Xu, X. Heng, G. Q. Tian, D. Gong, L. Cong, W. Ji*, D. Budker, K. Wei*",
-    "venue": "Physical Review Letters 134, 181801",
-    "year": 2025,
-    "topic": "Fundamental physics",
-    "url": "https://doi.org/10.1103/PhysRevLett.134.181801",
-    "status": "Published"
+    "url": "https://doi.org/10.1103/djwc-193y",
+    "status": "Published",
+    "publication_date": "2026-11-05",
+    "publication_date_source": "https://journals.aps.org/prd/abstract/10.1103/djwc-193y"
   },
   {
     "title": "Magnetic resonance searches for Earth-sourced exotic nuclear spin–dependent interactions",
@@ -33,7 +17,20 @@
     "year": 2026,
     "topic": "Fundamental physics",
     "url": "https://doi.org/10.1126/sciadv.aeg0974",
-    "status": "Published"
+    "status": "Published",
+    "publication_date": "2026-09-16",
+    "publication_date_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13580540/"
+  },
+  {
+    "title": "Constraints on New Vector Boson Mediated Electron-Nucleus Interactions from Spectroscopy Data of Polar Diatomic Molecules",
+    "authors": "K. Gaul*, L. Cong*, D. Budker",
+    "venue": "Physical Review Letters 136, 181805",
+    "year": 2026,
+    "topic": "Fundamental physics",
+    "url": "https://doi.org/10.1103/d19m-s856",
+    "status": "Published",
+    "publication_date": "2026-05-06",
+    "publication_date_source": "https://journals.aps.org/prl/abstract/10.1103/d19m-s856"
   },
   {
     "title": "Improved constraints on exotic interactions between electron and proton in hydrogen",
@@ -42,7 +39,97 @@
     "year": 2025,
     "topic": "Fundamental physics",
     "url": "https://doi.org/10.1103/8nyk-sysy",
-    "status": "Published"
+    "status": "Published",
+    "publication_date": "2025-11-20",
+    "publication_date_source": "https://journals.aps.org/pra/abstract/10.1103/8nyk-sysy"
+  },
+  {
+    "title": "Spin-dependent exotic interactions",
+    "authors": "L. Cong*, W. Ji*, P. Fadeev, F. Ficek, M. Jiang, V. V. Flambaum, H. S. Guan, D. F. Jackson Kimball, M. G. Kozlov, Y. V. Stadnik, D. Budker",
+    "venue": "Reviews of Modern Physics 97, 025005",
+    "year": 2025,
+    "topic": "Fundamental physics",
+    "url": "https://doi.org/10.1103/RevModPhys.97.025005",
+    "status": "Published",
+    "publication_date": "2025-06-24",
+    "publication_date_source": "https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.97.025005"
+  },
+  {
+    "title": "Constraints on Axion-Mediated Dipole-Dipole Interactions",
+    "authors": "Z. T. Xu, X. Heng, G. Q. Tian, D. Gong, L. Cong, W. Ji*, D. Budker, K. Wei*",
+    "venue": "Physical Review Letters 134, 181801",
+    "year": 2025,
+    "topic": "Fundamental physics",
+    "url": "https://doi.org/10.1103/PhysRevLett.134.181801",
+    "status": "Published",
+    "publication_date": "2025-05-06",
+    "publication_date_source": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.134.181801"
+  },
+  {
+    "title": "Spectral continuum in the Rabi–Stark model",
+    "authors": "D. Braak*, L. Cong*, H.-P. Eckle, H. Johannesson, E.-K. Twyeffort",
+    "venue": "Journal of the Optical Society of America B 41, C97–C111",
+    "year": 2024,
+    "topic": "Quantum optics",
+    "url": "https://doi.org/10.1364/JOSAB.524014",
+    "status": "Published",
+    "publication_date": "2024-06-03",
+    "publication_date_source": "https://opg.optica.org/josab/abstract.cfm?uri=josab-41-8-C97"
+  },
+  {
+    "title": "Entanglement resonance in the asymmetric quantum Rabi model",
+    "authors": "Y. Shi, L. Cong*, H.-P. Eckle*",
+    "venue": "Physical Review A 105, 062450",
+    "year": 2022,
+    "topic": "Quantum optics",
+    "url": "https://doi.org/10.1103/PhysRevA.105.062450",
+    "status": "Published",
+    "publication_date": "2022-06-27",
+    "publication_date_source": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.105.062450"
+  },
+  {
+    "title": "Application of polaron picture in the two-qubit quantum Rabi model",
+    "authors": "X.-M. Sun, L. Cong, H.-P. Eckle, Z.-J. Ying*, H.-G. Luo*",
+    "venue": "Physical Review A 101, 063832",
+    "year": 2020,
+    "topic": "Quantum optics",
+    "url": "https://doi.org/10.1103/PhysRevA.101.063832",
+    "status": "Published",
+    "publication_date": "2020-06-25",
+    "publication_date_source": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.101.063832"
+  },
+  {
+    "title": "Selective Interactions in the Quantum Rabi Model",
+    "authors": "L. Cong, S. Felicetti, J. Casanova, L. Lamata, E. Solano*, I. Arrazola*",
+    "venue": "Physical Review A 101, 032350",
+    "year": 2020,
+    "topic": "Quantum optics",
+    "url": "https://doi.org/10.1103/PhysRevA.101.032350",
+    "status": "Published",
+    "publication_date": "2020-03-31",
+    "publication_date_source": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.101.032350"
+  },
+  {
+    "title": "Polarons picture in the two-photon quantum Rabi model",
+    "authors": "L. Cong, X.-M. Sun, M. Liu, Z.-J. Ying*, H.-G. Luo*",
+    "venue": "Physical Review A 99, 013815",
+    "year": 2019,
+    "topic": "Quantum optics",
+    "url": "https://doi.org/10.1103/PhysRevA.99.013815",
+    "status": "Published",
+    "publication_date": "2019-01-09",
+    "publication_date_source": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.99.013815"
+  },
+  {
+    "title": "Frequency-renormalized multipolaron expansion for the quantum Rabi model",
+    "authors": "L. Cong, X.-M. Sun, M. Liu, Z.-J. Ying*, H.-G. Luo*",
+    "venue": "Physical Review A 95, 063803",
+    "year": 2017,
+    "topic": "Quantum optics",
+    "url": "https://doi.org/10.1103/PhysRevA.95.063803",
+    "status": "Published",
+    "publication_date": "2017-06-01",
+    "publication_date_source": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.95.063803"
   },
   {
     "title": "A Levitated-Magnet Vector Force Sensor for Spin-Dependent Exotic Interactions",
@@ -54,6 +141,15 @@
     "status": "Under review"
   },
   {
+    "title": "The COSMIC WISPers White Paper: The physics case for Weakly Interacting Slim Particles",
+    "authors": "A. Arza et al., including L. Cong",
+    "venue": "arXiv:2603.03433 · Submitted to European Physical Journal D",
+    "year": 2026,
+    "topic": "Community",
+    "url": "https://arxiv.org/abs/2603.03433",
+    "status": "Preprint"
+  },
+  {
     "title": "Searching for Exotic Interactions between Antimatter",
     "authors": "L. Cong, F. Ficek*, P. Fadeev, Y. V. Stadnik, D. Budker",
     "venue": "arXiv:2503.07161 · Submitted to Science Advances",
@@ -63,84 +159,12 @@
     "status": "Under review"
   },
   {
-    "title": "Testing exotic electron-electron interactions with the helium ionization-energy anomaly",
-    "authors": "L. Cong, F. Ficek*, R. Abdullin, M. G. Kozlov*, D. Budker",
-    "venue": "Physical Review D 114, 095010",
-    "year": 2026,
-    "topic": "Fundamental physics",
-    "url": "https://doi.org/10.1103/djwc-193y",
-    "status": "Published"
-  },
-  {
     "title": "Constraints on exotic interactions from scalar spin-spin coupling in tritium deuteride",
     "authors": "L. Cong, D. F. Jackson Kimball, M. G. Kozlov, D. Budker*",
     "venue": "arXiv:2408.15442",
     "year": 2024,
     "topic": "Fundamental physics",
     "url": "https://arxiv.org/abs/2408.15442",
-    "status": "Preprint"
-  },
-  {
-    "title": "Selective Interactions in the Quantum Rabi Model",
-    "authors": "L. Cong, S. Felicetti, J. Casanova, L. Lamata, E. Solano*, I. Arrazola*",
-    "venue": "Physical Review A 101, 032350",
-    "year": 2020,
-    "topic": "Quantum optics",
-    "url": "https://doi.org/10.1103/PhysRevA.101.032350",
-    "status": "Published"
-  },
-  {
-    "title": "Polarons picture in the two-photon quantum Rabi model",
-    "authors": "L. Cong, X.-M. Sun, M. Liu, Z.-J. Ying*, H.-G. Luo*",
-    "venue": "Physical Review A 99, 013815",
-    "year": 2019,
-    "topic": "Quantum optics",
-    "url": "https://doi.org/10.1103/PhysRevA.99.013815",
-    "status": "Published"
-  },
-  {
-    "title": "Frequency-renormalized multipolaron expansion for the quantum Rabi model",
-    "authors": "L. Cong, X.-M. Sun, M. Liu, Z.-J. Ying*, H.-G. Luo*",
-    "venue": "Physical Review A 95, 063803",
-    "year": 2017,
-    "topic": "Quantum optics",
-    "url": "https://doi.org/10.1103/PhysRevA.95.063803",
-    "status": "Published"
-  },
-  {
-    "title": "Spectral continuum in the Rabi–Stark model",
-    "authors": "D. Braak*, L. Cong*, H.-P. Eckle, H. Johannesson, E.-K. Twyeffort",
-    "venue": "Journal of the Optical Society of America B 41, C97–C111",
-    "year": 2024,
-    "topic": "Quantum optics",
-    "url": "https://doi.org/10.1364/JOSAB.524014",
-    "status": "Published"
-  },
-  {
-    "title": "Entanglement resonance in the asymmetric quantum Rabi model",
-    "authors": "Y. Shi, L. Cong*, H.-P. Eckle*",
-    "venue": "Physical Review A 105, 062450",
-    "year": 2022,
-    "topic": "Quantum optics",
-    "url": "https://doi.org/10.1103/PhysRevA.105.062450",
-    "status": "Published"
-  },
-  {
-    "title": "Application of polaron picture in the two-qubit quantum Rabi model",
-    "authors": "X.-M. Sun, L. Cong, H.-P. Eckle, Z.-J. Ying*, H.-G. Luo*",
-    "venue": "Physical Review A 101, 063832",
-    "year": 2020,
-    "topic": "Quantum optics",
-    "url": "https://doi.org/10.1103/PhysRevA.101.063832",
-    "status": "Published"
-  },
-  {
-    "title": "The COSMIC WISPers White Paper: The physics case for Weakly Interacting Slim Particles",
-    "authors": "A. Arza et al., including L. Cong",
-    "venue": "arXiv:2603.03433 · Submitted to European Physical Journal D",
-    "year": 2026,
-    "topic": "Community",
-    "url": "https://arxiv.org/abs/2603.03433",
     "status": "Preprint"
   },
   {
