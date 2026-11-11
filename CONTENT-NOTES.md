@@ -35,3 +35,9 @@ Published papers are sorted by the publisher’s online publication date, not th
 | 10.1103/PhysRevA.101.032350 | 2020-03-31 | [Publisher record](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.101.032350) |
 | 10.1103/PhysRevA.99.013815 | 2019-01-09 | [Publisher record](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.99.013815) |
 | 10.1103/PhysRevA.95.063803 | 2017-06-01 | [Publisher record](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.95.063803) |
+
+## Research vision — 11 November 2026
+
+The Research Vision section follows the site owner's revised text and subsequent choice of “Precision Measurements” for the second card. It describes future aims, including experiments with a quantum source and sensor; these are not presented as completed results. The broad novelty claim “remain largely unexplored” was recast as a research objective rather than an established literature conclusion. “Weak signals of new interactions” avoids ambiguity with the Standard Model weak interaction.
+
+“The strong CP problem” uses standard terminology: [PDG axion review](https://pdg.lbl.gov/2023/reviews/rpp2023-rev-axions.pdf). The possible connection between axions and the matter–antimatter asymmetry is model-dependent; the wording “could ... offer insights” preserves this distinction. One theoretical example is [Axiogenesis](https://arxiv.org/abs/1910.02080).
