@@ -282,3 +282,5 @@ footer { padding: 18px 0 25px; display: flex; flex-wrap: wrap; justify-content: 
   }
   .publication, .selected-list li { break-inside: avoid; }
 }
+
+.visit-counter { flex-basis: 100%; margin-top: 6px; text-align: center; color: #687483; font: 11px/1.6 var(--sans); }

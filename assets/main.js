@@ -71,3 +71,12 @@
   revealLinkedPublication();
   window.addEventListener('hashchange', revealLinkedPublication);
 })();
+
+// Count the public homepage only; exclude local previews and other project sites.
+(() => {
+  if (location.protocol !== 'https:' || location.hostname !== 'lei-cong.github.io' || !['/', '/index.html'].includes(location.pathname)) return;
+  const counter = document.createElement('script');
+  counter.src = 'https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js';
+  counter.async = true;
+  document.head.appendChild(counter);
+})();

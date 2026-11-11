@@ -1,6 +1,6 @@
 # Lei Cong — Academic Website
 
-A standalone, responsive, English academic website for **https://lei-cong.github.io/**. Plain HTML, CSS and JavaScript; no installation, build, externally hosted fonts, analytics, or account required. The full publication list initially shows five entries, with a button to expand or collapse the rest. Search and topic filters show all matching entries. All publications remain readable without JavaScript and in print.
+A standalone, responsive, English academic website for **https://lei-cong.github.io/**. Plain HTML, CSS and JavaScript; no installation, build, externally hosted fonts, or account required. The full publication list initially shows five entries, with a button to expand or collapse the rest. Search and topic filters show all matching entries. All publications remain readable without JavaScript and in print.
 
 ## 本地预览
 
@@ -67,3 +67,7 @@ robots.txt 现有的通用允许规则覆盖搜索机器人。新增文字直接
 - https://developers.google.com/search/docs/appearance/structured-data/profile-page
 - https://developers.google.com/search/docs/appearance/structured-data/dataset
 - https://developers.openai.com/api/docs/bots
+
+## Homepage visit counter
+
+The footer displays homepage page views using the external Busuanzi service (https://busuanzi.ibruce.info/). Repeat loads count as views, not unique people. The script runs only on the HTTPS production homepage, never on local previews. The count stays hidden until the service responds. It cannot reconstruct visits before integration, and blocked requests or service outages can affect counts. Visitor browsers contact the third-party service directly.
