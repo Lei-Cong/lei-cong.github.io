@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Courgette';
+  src: url('fonts/Courgette-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
 :root {
   --paper: #faf8f3;
   --surface: #fffdf8;
@@ -202,10 +209,15 @@ input { width: min(100%, 380px); padding: 8px 10px; }
 .item-lines { margin: 6px 0 0; padding-left: 1.2em; list-style: disc; font-size: 15px; }
 .detail-list .item-lines li { padding: 0; margin: 4px 0; border: 0; }
 footer { padding: 18px 0 25px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font: 12px var(--sans); color: var(--muted); }
-.footer-quote { flex-basis: 100%; margin: 0 0 20px; padding: 26px 0 18px; text-align: center; }
-.footer-quote blockquote { margin: 0; color: #53667b; font: italic clamp(19px, 2.4vw, 23px)/1.5 var(--display); }
+.footer-quote {
+  flex-basis: 100%; min-width: 0; margin: 0 0 20px; padding: 26px 0 18px;
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center;
+  gap: 3px .4em; text-align: center; color: #53667b;
+  font: 400 clamp(16px, 3vw, 26px)/1.6 'Courgette', 'Apple Chancery', 'Palatino Linotype', Georgia, serif;
+}
+.footer-quote blockquote { min-width: 0; margin: 0; font: inherit; }
 .footer-quote p { margin: 0; }
-.footer-quote figcaption { margin-top: 9px; font: 12px/1.5 var(--sans); color: var(--muted); }
+.footer-quote figcaption { margin: 0; font-size: .75em; white-space: nowrap; }
 .footer-quote a { color: inherit; text-decoration: none; }
 .footer-quote a:hover { text-decoration: underline; }
 .skip { position: absolute; top: -100px; left: 12px; padding: 8px; background: var(--surface); }

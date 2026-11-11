@@ -1,6 +1,6 @@
 # Lei Cong — Academic Website
 
-A standalone, responsive, English academic website for **https://lei-cong.github.io/**. Plain HTML, CSS and JavaScript; no installation, build, external fonts, analytics, or account required. The full publication list initially shows five entries, with a button to expand or collapse the rest. Search and topic filters show all matching entries. All publications remain readable without JavaScript and in print.
+A standalone, responsive, English academic website for **https://lei-cong.github.io/**. Plain HTML, CSS and JavaScript; no installation, build, externally hosted fonts, analytics, or account required. The full publication list initially shows five entries, with a button to expand or collapse the rest. Search and topic filters show all matching entries. All publications remain readable without JavaScript and in print.
 
 ## 本地预览
 
@@ -29,6 +29,7 @@ GitHub 官方说明：https://docs.github.com/en/pages/quickstart
 
 - `index.html`：全部英文网站内容、17 项研究成果。
 - `assets/style.css`：桌面、手机、打印样式。
+- `assets/fonts/`：页脚使用的 Courgette 字体及 SIL Open Font License；字体随网站加载，无需访问外部字体服务。来源：https://github.com/google/fonts/tree/main/ofl/courgette
 - `assets/main.js`：论文主题筛选和搜索。
 - `assets/publications.json`：结构化论文资料，供后续维护；当前 HTML 不依赖运行时读取此文件。
 - `assets/Lei-Cong-CV-2026.pdf`：你提供的 PDF 简历，可从首页个人信息区下载。
